@@ -21,7 +21,6 @@ sealed class ExecutionResult {
 @Service
 class BlackdExecutor : Disposable {
     private val logger = Logger.getInstance(BlackdExecutor::class.java.name)
-    private val processBuilder: ProcessBuilder = ProcessBuilder()
     private var blackdProcess: Process? = null
     private var runningInstance: CurrentlyRunning? = null
 

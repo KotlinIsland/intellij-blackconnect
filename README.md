@@ -9,6 +9,7 @@
 
 **NB**: *If you want to see this plugin as an official way to use **black** with PyCharm - feel free to voice your support in [this Pull Request](https://github.com/psf/black/pull/3150)!*
 
+<!-- Plugin description -->
 Simple plugin for IDEA intended to help you to avoid overhead from starting [black](https://github.com/psf/black) process each time you save a Python file.
 
 Instead, on each press of `Alt + Shift + B` plugin will send contents of the current Python file to the [blackd](https://black.readthedocs.io/en/stable/blackd.html) and replace them with the formatted version (if any changes were made at all).
@@ -30,6 +31,8 @@ Instead, on each press of `Alt + Shift + B` plugin will send contents of the cur
     * Skipping string normalization.
     * Processing of "magic trailing comma" in collections.
     * Target specific Python versions.
+
+<!-- Plugin description end -->
 
 ## Installation
 
@@ -63,9 +66,9 @@ Just go to the [plugin page](https://plugins.jetbrains.com/plugin/14321-blackcon
 
 Development requirements:
 
-* Java SDK 11 or newer
+* Java SDK 8 or newer
 * Python 3.8 or newer
-* Poetry
+* Poetry 1.2 or newer
 
 Run tests:
 
